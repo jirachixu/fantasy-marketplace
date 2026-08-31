@@ -1,0 +1,401 @@
+{
+    "Magic": {
+        "bases": {
+            "Staff": {
+                "weight": 1,
+                "tags": ["two-handed", "ranged"],
+                "base_stats": {
+                    "damage": 10,
+                    "speed": 1.0,
+                    "range": 5.0
+                }
+            },
+            "Grimoire": {
+                "weight": 1,
+                "tags": ["one-handed", "ranged"],
+                "base_stats": {
+                    "damage": 5,
+                    "speed": 2.0,
+                    "range": 4.0
+                }
+            },
+            "Rune": {
+                "weight": 1,
+                "tags": ["one-handed", "ranged"],
+                "base_stats": {
+                    "damage": 8,
+                    "speed": 1.2,
+                    "range": 3.0
+                }
+            },
+            "Wand": {
+                "weight": 1,
+                "tags": ["one-handed", "ranged"],
+                "base_stats": {
+                    "damage": 5,
+                    "speed": 2.0,
+                    "range": 4.0
+                }
+            },
+            "Orb": {
+                "weight": 1,
+                "tags": ["one-handed", "ranged"],
+                "base_stats": {
+                    "damage": 12,
+                    "speed": 0.8,
+                    "range": 5.0
+                }
+            }
+        },
+        "level": {
+            "Apprentice's": {
+                "weight": 30,
+                "tags": ["dmg_boost_1"]
+            },
+            "Scholar's": {
+                "weight": 15,
+                "tags": ["dmg_boost_2"]
+            },
+            "Wizard's": {
+                "weight": 5,
+                "tags": ["dmg_boost_3"]
+            },
+            "Witch's": {
+                "weight": 5,
+                "tags": ["dmg_boost_3"]
+            },
+            "Master's": {
+                "weight": 1,
+                "tags": ["dmg_boost_4"]
+            },
+            "Ancient": {
+                "weight": 0.1,
+                "tags": ["dmg_boost_5"]
+            },
+            "Legendary": {
+                "weight": 0.01,
+                "tags": ["dmg_boost_6"]
+            }
+        },
+        "suffixes": {
+            "": {
+                "weight": 30,
+                "tags": []
+            },
+            "of Fire": {
+                "weight": 10,
+                "tags": ["fire"]
+            },
+            "of Ice": {
+                "weight": 10,
+                "tags": ["ice"]
+            },
+            "of Lightning": {
+                "weight": 5,
+                "tags": ["lightning"]
+            },
+            "of the Arcane": {
+                "weight": 1,
+                "tags": ["arcane"]
+            },
+            "of the Void": {
+                "weight": 0.25,
+                "tags": ["void"]
+            },
+            "of Heaven": {
+                "weight": 0.1,
+                "tags": ["true_damage"]
+            }
+        },
+        "prefixes": {
+            "": {
+                "weight": 30,
+                "tags": []
+            },
+            "Enchanted": {
+                "weight": 10,
+                "tags": ["dmg_boost_1"]
+            },
+            "Mystic": {
+                "weight": 5,
+                "tags": ["dmg_boost_2"]
+            },
+            "Cursed": {
+                "weight": 1,
+                "tags": ["dmg_boost_3"]
+            },
+            "Blessed": {
+                "weight": 0.1,
+                "tags": ["dmg_boost_4"]
+            }
+        }
+    },
+    "Melee": {
+        "bases": {
+            "Sword": {
+                "weight": 1,
+                "tags": ["one-handed", "melee"],
+                "base_stats": {
+                    "damage": 9,
+                    "speed": 1.5,
+                    "range": 1.5
+                }
+            },
+            "Dagger": {
+                "weight": 1,
+                "tags": ["one-handed", "melee"],
+                "base_stats": {
+                    "damage": 6,
+                    "speed": 2.0,
+                    "range": 1.0
+                }
+            },
+            "Axe": {
+                "weight": 1,
+                "tags": ["one-handed", "melee"],
+                "base_stats": {
+                    "damage": 12,
+                    "speed": 1.0,
+                    "range": 1.5
+                }
+            },
+            "Mace": {
+                "weight": 1,
+                "tags": ["one-handed", "melee"],
+                "base_stats": {
+                    "damage": 15,
+                    "speed": 0.8,
+                    "range": 1.5
+                }
+            },
+            "Spear": {
+                "weight": 1,
+                "tags": ["two-handed", "melee"],
+                "base_stats": {
+                    "damage": 18,
+                    "speed": 0.6,
+                    "range": 2.5
+                }
+            },
+            "Hammer": {
+                "weight": 1,
+                "tags": ["one-handed", "melee"],
+                "base_stats": {
+                    "damage": 6,
+                    "speed": 2.0,
+                    "range": 1.0
+                }
+            },
+            "Longsword": {
+                "weight": 1,
+                "tags": ["two-handed", "melee"],
+                "base_stats": {
+                    "damage": 18,
+                    "speed": 0.6,
+                    "range": 2.0
+                }
+            }
+        },
+        "level": {
+            "Recruit's": {
+                "weight": 30,
+                "tags": ["dmg_boost_1"]
+            },
+            "Novice's": {
+                "weight": 15,
+                "tags": ["dmg_boost_2"]
+            },
+            "Warrior's": {
+                "weight": 5,
+                "tags": ["dmg_boost_3"]
+            },
+            "Knight's": {
+                "weight": 5,
+                "tags": ["dmg_boost_3"]
+            },
+            "Champion's": {
+                "weight": 1,
+                "tags": ["dmg_boost_4"]
+            },
+            "Hero's": {
+                "weight": 0.1,
+                "tags": ["dmg_boost_5"]
+            },
+            "Legendary": {
+                "weight": 0.01,
+                "tags": ["dmg_boost_6"]
+            }
+        },
+        "suffixes": {
+            "": {
+                "weight": 30,
+                "tags": []
+            },
+            "of Strength": {
+                "weight": 10,
+                "tags": ["strength"]
+            },
+            "of Agility": {
+                "weight": 10,
+                "tags": ["agility"]
+            },
+            "of Great Length": {
+                "weight": 5,
+                "tags": ["increase_range"]
+            },
+            "of Berserk": {
+                "weight": 1,
+                "tags": ["dmg_and_speed_boost"]
+            },
+            "of the Goddess": {
+                "weight": 0.1,
+                "tags": ["true_damage"]
+            }
+        },
+        "prefixes": {
+            "": {
+                "weight": 30,
+                "tags": []
+            },
+            "Forged": {
+                "weight": 10,
+                "tags": ["dmg_boost_1"]
+            },
+            "Tempered": {
+                "weight": 5,
+                "tags": ["dmg_boost_2"]
+            },
+            "Hardened": {
+                "weight": 1,
+                "tags": ["dmg_boost_3"]
+            },
+            "Blessed": {
+                "weight": 0.1,
+                "tags": ["dmg_boost_4"]
+            }
+        }
+    },
+    "Ranged": {
+        "bases": {
+            "Bow": {
+                "weight": 1,
+                "tags": ["two-handed", "ranged"],
+                "base_stats": {
+                    "damage": 8,
+                    "speed": 1.5,
+                    "range": 6.0
+                }
+            },
+            "Crossbow": {
+                "weight": 1,
+                "tags": ["two-handed", "ranged"],
+                "base_stats": {
+                    "damage": 12,
+                    "speed": 1.0,
+                    "range": 6.0
+                }
+            },
+            "Throwing Knife": {
+                "weight": 1,
+                "tags": ["one-handed", "ranged"],
+                "base_stats": {
+                    "damage": 5,
+                    "speed": 2.0,
+                    "range": 4.0
+                }
+            },
+            "Slingshot": {
+                "weight": 1,
+                "tags": ["two-handed", "ranged"],
+                "base_stats": {
+                    "damage": 4,
+                    "speed": 2.5,
+                    "range": 3.0
+                }
+            },
+            "Longbow": {
+                "weight": 1,
+                "tags": ["two-handed", "ranged"],
+                "base_stats": {
+                    "damage": 10,
+                    "speed": 1.2,
+                    "range": 7.0
+                }
+            }
+        },
+        "level": {
+            "Apprentice's": {
+                "weight": 30,
+                "tags": ["dmg_boost_1"]
+            },
+            "Hunter's": {
+                "weight": 15,
+                "tags": ["dmg_boost_2"]
+            },
+            "Sharpshooter's": {
+                "weight": 5,
+                "tags": ["dmg_boost_3"]
+            },
+            "Marksman's": {
+                "weight": 5,
+                "tags": ["dmg_boost_3"]
+            },
+            "Master's": {
+                "weight": 1,
+                "tags": ["dmg_boost_4"]
+            },
+            "Legendary Archer's": {
+                "weight": 0.1,
+                "tags": ["dmg_boost_5"]
+            }
+        },
+        "suffixes": {
+            "": {
+                "weight": 30,
+                "tags": []
+            },
+            "of Power": {
+                "weight": 10,
+                "tags": ["strength"]
+            },
+            "of Agility": {
+                "weight": 10,
+                "tags": ["agility"]
+            },
+            "of Precision": {
+                "weight": 5,
+                "tags": ["increase_range"]
+            },
+            "of Hunting": {
+                "weight": 1,
+                "tags": ["dmg_and_speed_boost"]
+            },
+            "of Sniping": {
+                "weight": 0.1,
+                "tags": ["true_damage"]
+            }
+        },
+        "prefixes": {
+            "": {
+                "weight": 30,
+                "tags": []
+            },
+            "Sharpened": {
+                "weight": 10,
+                "tags": ["dmg_boost_1"]
+            },
+            "Reinforced": {
+                "weight": 5,
+                "tags": ["dmg_boost_2"]
+            },
+            "Balanced": {
+                "weight": 1,
+                "tags": ["dmg_boost_3"]
+            },
+            "Blessed": {
+                "weight": 0.1,
+                "tags": ["dmg_boost_4"]
+            }
+        }
+    }
+}
