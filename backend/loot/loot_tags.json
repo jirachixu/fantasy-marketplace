@@ -1,0 +1,124 @@
+{
+    "dmg_boost_1": {
+        "stat": "damage",
+        "multiplier": 1.2
+    },
+    "dmg_boost_2": {
+        "stat": "damage",
+        "multiplier": 1.5
+    },
+    "dmg_boost_3": {
+        "stat": "damage",
+        "multiplier": 1.8
+    },
+    "dmg_boost_4": {
+        "stat": "damage",
+        "multiplier": 2.1
+    },
+    "dmg_boost_5": {
+        "stat": "damage",
+        "multiplier": 2.5
+    },
+    "dmg_boost_6": {
+        "stat": "damage",
+        "multiplier": 3.0
+    },
+    "def_boost_1": {
+        "stat": "defense",
+        "multiplier": 1.2
+    },
+    "def_boost_2": {
+        "stat": "defense",
+        "multiplier": 1.5
+    },
+    "def_boost_3": {
+        "stat": "defense",
+        "multiplier": 1.8
+    },
+    "def_boost_4": {
+        "stat": "defense",
+        "multiplier": 2.1
+    },
+    "def_boost_5": {
+        "stat": "defense",
+        "multiplier": 2.5
+    },
+    "def_boost_6": {
+        "stat": "defense",
+        "multiplier": 3.0
+    },
+    "mdef_boost_1": {
+        "stat": "magic_resist",
+        "multiplier": 1.2
+    },
+    "mdef_boost_2": {
+        "stat": "magic_resist",
+        "multiplier": 1.5
+    },
+    "mdef_boost_3": {
+        "stat": "magic_resist",
+        "multiplier": 1.8
+    },
+    "mdef_boost_4": {
+        "stat": "magic_resist",
+        "multiplier": 2.1
+    },
+    "mdef_boost_5": {
+        "stat": "magic_resist",
+        "multiplier": 2.5
+    },
+    "mdef_boost_6": {
+        "stat": "magic_resist",
+        "multiplier": 3.0
+    },
+    "heavy": {
+        "stat": "movement_speed",
+        "multiplier": 0.85
+    },
+    "medium": {
+        "stat": "movement_speed",
+        "multiplier": 0.95
+    },
+    "light": {
+        "stat": "movement_speed",
+        "multiplier": 1.0
+    },
+    "cloth": {
+        "stat": "movement_speed",
+        "multiplier": 1.05
+    },
+    "strength": {
+        "stat": "damage",
+        "multiplier": 1.2
+    },
+    "agility": {
+        "stat": "speed",
+        "multiplier": 1.2
+    },
+    "increase_range": {
+        "stat": "range",
+        "multiplier": 1.25
+    },
+    "one-handed": {
+        "stat": "speed",
+        "multiplier": 1.15,
+        "hands": 1,
+        "dual_wieldable": true
+    },
+    "two-handed": {
+        "stat": "damage",
+        "multiplier": 1.25,
+        "hands": 2,
+        "dual_wieldable": false
+    },
+    "melee": {
+        "stat": "range",
+        "multiplier": 1.0,
+        "attack_type": "melee"
+    },
+    "ranged": {
+        "stat": "range",
+        "multiplier": 1.0,
+        "attack_type": "ranged"
+    }
+}

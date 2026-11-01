@@ -245,7 +245,7 @@
             },
             "of Berserk": {
                 "weight": 1,
-                "tags": ["dmg_and_speed_boost"]
+                "tags": ["dmg_boost_1", "agility"]
             },
             "of the Goddess": {
                 "weight": 0.1,
@@ -368,7 +368,7 @@
             },
             "of Hunting": {
                 "weight": 1,
-                "tags": ["dmg_and_speed_boost"]
+                "tags": ["dmg_boost_1", "agility"]
             },
             "of Sniping": {
                 "weight": 0.1,

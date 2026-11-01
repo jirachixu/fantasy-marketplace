@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default async function Home() {
-	const response = await fetch("http://localhost:8000/", {
+	const response = await fetch("http://localhost:8001/", {
 		cache: "no-store",
 	});
 	const data = await response.json();

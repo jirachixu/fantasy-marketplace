@@ -1,0 +1,677 @@
+{
+    "Knight": {
+        "bases": {
+            "Full Plate": {
+                "weight": 1,
+                "tags": ["heavy", "chest"],
+                "base_stats": {
+                    "defense": 30,
+                    "magic_resist": 8,
+                    "movement_speed": 1.0
+                }
+            },
+            "Greathelm": {
+                "weight": 1,
+                "tags": ["heavy", "head"],
+                "base_stats": {
+                    "defense": 18,
+                    "magic_resist": 5,
+                    "movement_speed": 1.0
+                }
+            },
+            "Tower Shield": {
+                "weight": 1,
+                "tags": ["heavy", "shield"],
+                "base_stats": {
+                    "defense": 25,
+                    "magic_resist": 10,
+                    "movement_speed": 1.0
+                }
+            },
+            "Plate Greaves": {
+                "weight": 1,
+                "tags": ["heavy", "legs"],
+                "base_stats": {
+                    "defense": 16,
+                    "magic_resist": 4,
+                    "movement_speed": 1.0
+                }
+            },
+            "Steel Gauntlets": {
+                "weight": 1,
+                "tags": ["heavy", "hands"],
+                "base_stats": {
+                    "defense": 12,
+                    "magic_resist": 3,
+                    "movement_speed": 1.0
+                }
+            }
+        },
+        "level": {
+            "Squire's": {
+                "weight": 30,
+                "tags": ["def_boost_1"]
+            },
+            "Footman's": {
+                "weight": 15,
+                "tags": ["def_boost_2"]
+            },
+            "Knight's": {
+                "weight": 5,
+                "tags": ["def_boost_3"]
+            },
+            "Crusader's": {
+                "weight": 5,
+                "tags": ["def_boost_3"]
+            },
+            "Paladin's": {
+                "weight": 1,
+                "tags": ["def_boost_4"]
+            },
+            "Warlord's": {
+                "weight": 0.1,
+                "tags": ["def_boost_5"]
+            },
+            "Legendary": {
+                "weight": 0.01,
+                "tags": ["def_boost_6"]
+            }
+        },
+        "suffixes": {
+            "": {
+                "weight": 30,
+                "tags": []
+            },
+            "of the Fortress": {
+                "weight": 10,
+                "tags": ["def_boost_1"]
+            },
+            "of Ironclad": {
+                "weight": 10,
+                "tags": ["def_boost_2"]
+            },
+            "of Sanctuary": {
+                "weight": 5,
+                "tags": ["mdef_boost_2"]
+            },
+            "of the Bulwark": {
+                "weight": 1,
+                "tags": ["def_boost_3"]
+            },
+            "of the Aegis": {
+                "weight": 0.1,
+                "tags": ["def_boost_5"]
+            },
+            "of the Null-Ward": {
+                "weight": 5,
+                "tags": ["void_resist"]
+            }
+        },
+        "prefixes": {
+            "": {
+                "weight": 30,
+                "tags": []
+            },
+            "Void-Forged": {
+                "weight": 5,
+                "tags": ["void_resist"]
+            },
+            "Reinforced": {
+                "weight": 10,
+                "tags": ["def_boost_1"]
+            },
+            "Tempered": {
+                "weight": 5,
+                "tags": ["def_boost_2"]
+            },
+            "Gilded": {
+                "weight": 1,
+                "tags": ["def_boost_3"]
+            },
+            "Impenetrable": {
+                "weight": 0.1,
+                "tags": ["def_boost_4"]
+            }
+        }
+    },
+    "Archer": {
+        "bases": {
+            "Reinforced Leather Vest": {
+                "weight": 1,
+                "tags": ["light", "chest"],
+                "base_stats": {
+                    "defense": 14,
+                    "magic_resist": 12,
+                    "movement_speed": 1.0
+                }
+            },
+            "Ranger Cowl": {
+                "weight": 1,
+                "tags": ["light", "head"],
+                "base_stats": {
+                    "defense": 9,
+                    "magic_resist": 10,
+                    "movement_speed": 1.0
+                }
+            },
+            "Camouflage Cloak": {
+                "weight": 1,
+                "tags": ["light", "back"],
+                "base_stats": {
+                    "defense": 7,
+                    "magic_resist": 14,
+                    "movement_speed": 1.0
+                }
+            },
+            "Stalker Boots": {
+                "weight": 1,
+                "tags": ["light", "legs"],
+                "base_stats": {
+                    "defense": 8,
+                    "magic_resist": 8,
+                    "movement_speed": 1.0
+                }
+            },
+            "Archer Bracers": {
+                "weight": 1,
+                "tags": ["light", "hands"],
+                "base_stats": {
+                    "defense": 7,
+                    "magic_resist": 7,
+                    "movement_speed": 1.0
+                }
+            }
+        },
+        "level": {
+            "Trainee's": {
+                "weight": 30,
+                "tags": ["def_boost_1"]
+            },
+            "Scout's": {
+                "weight": 15,
+                "tags": ["def_boost_2"]
+            },
+            "Tracker's": {
+                "weight": 5,
+                "tags": ["def_boost_3"]
+            },
+            "Ranger's": {
+                "weight": 5,
+                "tags": ["def_boost_3"]
+            },
+            "Pathfinder's": {
+                "weight": 1,
+                "tags": ["def_boost_4"]
+            },
+            "Windrunner's": {
+                "weight": 0.1,
+                "tags": ["def_boost_5"]
+            },
+            "Legendary": {
+                "weight": 0.01,
+                "tags": ["def_boost_6"]
+            }
+        },
+        "suffixes": {
+            "": {
+                "weight": 30,
+                "tags": []
+            },
+            "of Evasion Guard": {
+                "weight": 10,
+                "tags": ["def_boost_1"]
+            },
+            "of the Zephyr": {
+                "weight": 10,
+                "tags": ["ice_resist"]
+            },
+            "of Grounding": {
+                "weight": 5,
+                "tags": ["lightning_resist"]
+            },
+            "of the Ward": {
+                "weight": 1,
+                "tags": ["def_boost_2"]
+            },
+            "of the Forest Veil": {
+                "weight": 0.1,
+                "tags": ["mdef_boost_3"]
+            },
+            "of Void Warding": {
+                "weight": 5,
+                "tags": ["void_resist"]
+            }
+        },
+        "prefixes": {
+            "": {
+                "weight": 30,
+                "tags": []
+            },
+            "Void-Strider's": {
+                "weight": 5,
+                "tags": ["void_resist"]
+            },
+            "Supple": {
+                "weight": 10,
+                "tags": ["def_boost_1"]
+            },
+            "Fitted": {
+                "weight": 5,
+                "tags": ["def_boost_2"]
+            },
+            "Prowler's": {
+                "weight": 1,
+                "tags": ["def_boost_3"]
+            },
+            "Ghostfeather": {
+                "weight": 0.1,
+                "tags": ["def_boost_4"]
+            }
+        }
+    },
+    "Sorcerer": {
+        "bases": {
+            "Arcane Robe": {
+                "weight": 1,
+                "tags": ["cloth", "chest"],
+                "base_stats": {
+                    "defense": 6,
+                    "magic_resist": 30,
+                    "movement_speed": 1.0
+                }
+            },
+            "Wizard Hat": {
+                "weight": 1,
+                "tags": ["cloth", "head"],
+                "base_stats": {
+                    "defense": 4,
+                    "magic_resist": 20,
+                    "movement_speed": 1.0
+                }
+            },
+            "Mystic Mantle": {
+                "weight": 1,
+                "tags": ["cloth", "shoulders"],
+                "base_stats": {
+                    "defense": 5,
+                    "magic_resist": 22,
+                    "movement_speed": 1.0
+                }
+            },
+            "Enchanted Slippers": {
+                "weight": 1,
+                "tags": ["cloth", "legs"],
+                "base_stats": {
+                    "defense": 4,
+                    "magic_resist": 16,
+                    "movement_speed": 1.0
+                }
+            },
+            "Spellweaver Gloves": {
+                "weight": 1,
+                "tags": ["cloth", "hands"],
+                "base_stats": {
+                    "defense": 3,
+                    "magic_resist": 18,
+                    "movement_speed": 1.0
+                }
+            }
+        },
+        "level": {
+            "Initiate's": {
+                "weight": 30,
+                "tags": ["mdef_boost_1"]
+            },
+            "Acolyte's": {
+                "weight": 15,
+                "tags": ["mdef_boost_2"]
+            },
+            "Mage's": {
+                "weight": 5,
+                "tags": ["mdef_boost_3"]
+            },
+            "Warlock's": {
+                "weight": 5,
+                "tags": ["mdef_boost_3"]
+            },
+            "Archmage's": {
+                "weight": 1,
+                "tags": ["mdef_boost_4"]
+            },
+            "Elder Sage's": {
+                "weight": 0.1,
+                "tags": ["mdef_boost_5"]
+            },
+            "Legendary": {
+                "weight": 0.01,
+                "tags": ["mdef_boost_6"]
+            }
+        },
+        "suffixes": {
+            "": {
+                "weight": 30,
+                "tags": []
+            },
+            "of Fire Resistance": {
+                "weight": 10,
+                "tags": ["fire_resist"]
+            },
+            "of Frost Warding": {
+                "weight": 10,
+                "tags": ["ice_resist"]
+            },
+            "of Lightning Grounding": {
+                "weight": 5,
+                "tags": ["lightning_resist"]
+            },
+            "of Mana Shielding": {
+                "weight": 1,
+                "tags": ["mana_shield"]
+            },
+            "of the Cosmic Veil": {
+                "weight": 0.1,
+                "tags": ["mdef_boost_5"]
+            },
+            "of Void Resistance": {
+                "weight": 5,
+                "tags": ["void_resist"]
+            }
+        },
+        "prefixes": {
+            "": {
+                "weight": 30,
+                "tags": []
+            },
+            "Void-Veiled": {
+                "weight": 5,
+                "tags": ["void_resist"]
+            },
+            "Woven": {
+                "weight": 10,
+                "tags": ["mdef_boost_1"]
+            },
+            "Rune-Etched": {
+                "weight": 5,
+                "tags": ["mdef_boost_2"]
+            },
+            "Aether-Infused": {
+                "weight": 1,
+                "tags": ["mdef_boost_3"]
+            },
+            "Celestial": {
+                "weight": 0.1,
+                "tags": ["mdef_boost_4"]
+            }
+        }
+    },
+    "Assassin": {
+        "bases": {
+            "Shadow Garb": {
+                "weight": 1,
+                "tags": ["light", "chest"],
+                "base_stats": {
+                    "defense": 12,
+                    "magic_resist": 14,
+                    "movement_speed": 1.0
+                }
+            },
+            "Nightshade Mask": {
+                "weight": 1,
+                "tags": ["light", "head"],
+                "base_stats": {
+                    "defense": 8,
+                    "magic_resist": 10,
+                    "movement_speed": 1.0
+                }
+            },
+            "Silent Treads": {
+                "weight": 1,
+                "tags": ["light", "legs"],
+                "base_stats": {
+                    "defense": 7,
+                    "magic_resist": 9,
+                    "movement_speed": 1.0
+                }
+            },
+            "Leather Vambraces": {
+                "weight": 1,
+                "tags": ["light", "hands"],
+                "base_stats": {
+                    "defense": 6,
+                    "magic_resist": 8,
+                    "movement_speed": 1.0
+                }
+            },
+            "Shrouded Hood": {
+                "weight": 1,
+                "tags": ["light", "head"],
+                "base_stats": {
+                    "defense": 7,
+                    "magic_resist": 12,
+                    "movement_speed": 1.0
+                }
+            }
+        },
+        "level": {
+            "Rogue's": {
+                "weight": 30,
+                "tags": ["def_boost_1"]
+            },
+            "Infiltrator's": {
+                "weight": 15,
+                "tags": ["def_boost_2"]
+            },
+            "Stalker's": {
+                "weight": 5,
+                "tags": ["def_boost_3"]
+            },
+            "Executioner's": {
+                "weight": 5,
+                "tags": ["def_boost_3"]
+            },
+            "Master Assassin's": {
+                "weight": 1,
+                "tags": ["def_boost_4"]
+            },
+            "Shadow Lord's": {
+                "weight": 0.1,
+                "tags": ["def_boost_5"]
+            },
+            "Legendary": {
+                "weight": 0.01,
+                "tags": ["def_boost_6"]
+            }
+        },
+        "suffixes": {
+            "": {
+                "weight": 30,
+                "tags": []
+            },
+            "of Deflection": {
+                "weight": 10,
+                "tags": ["def_boost_1"]
+            },
+            "of Shadow Warding": {
+                "weight": 10,
+                "tags": ["mdef_boost_1"]
+            },
+            "of Night Shroud": {
+                "weight": 5,
+                "tags": ["def_boost_2"]
+            },
+            "of the Veil": {
+                "weight": 1,
+                "tags": ["mana_shield"]
+            },
+            "of the Eclipse": {
+                "weight": 0.1,
+                "tags": ["mdef_boost_4"]
+            },
+            "of the Abyss": {
+                "weight": 5,
+                "tags": ["void_resist"]
+            }
+        },
+        "prefixes": {
+            "": {
+                "weight": 30,
+                "tags": []
+            },
+            "Void-Shrouded": {
+                "weight": 5,
+                "tags": ["void_resist"]
+            },
+            "Darkened": {
+                "weight": 10,
+                "tags": ["def_boost_1"]
+            },
+            "Insulated": {
+                "weight": 5,
+                "tags": ["mdef_boost_2"]
+            },
+            "Whisper-Soft": {
+                "weight": 1,
+                "tags": ["def_boost_3"]
+            },
+            "Nether-Touched": {
+                "weight": 0.1,
+                "tags": ["mdef_boost_4"]
+            }
+        }
+    },
+    "Barbarian": {
+        "bases": {
+            "Bearskin Harness": {
+                "weight": 1,
+                "tags": ["medium", "chest"],
+                "base_stats": {
+                    "defense": 22,
+                    "magic_resist": 6,
+                    "movement_speed": 1.0
+                }
+            },
+            "Horned Skullcap": {
+                "weight": 1,
+                "tags": ["medium", "head"],
+                "base_stats": {
+                    "defense": 14,
+                    "magic_resist": 4,
+                    "movement_speed": 1.0
+                }
+            },
+            "Rawhide Greaves": {
+                "weight": 1,
+                "tags": ["medium", "legs"],
+                "base_stats": {
+                    "defense": 13,
+                    "magic_resist": 5,
+                    "movement_speed": 1.0
+                }
+            },
+            "Spiked Bracers": {
+                "weight": 1,
+                "tags": ["medium", "hands"],
+                "base_stats": {
+                    "defense": 10,
+                    "magic_resist": 3,
+                    "movement_speed": 1.0
+                }
+            },
+            "War Belt": {
+                "weight": 1,
+                "tags": ["medium", "waist"],
+                "base_stats": {
+                    "defense": 11,
+                    "magic_resist": 4,
+                    "movement_speed": 1.0
+                }
+            }
+        },
+        "level": {
+            "Tribesman's": {
+                "weight": 30,
+                "tags": ["def_boost_1"]
+            },
+            "Raider's": {
+                "weight": 15,
+                "tags": ["def_boost_2"]
+            },
+            "Berserker's": {
+                "weight": 5,
+                "tags": ["def_boost_3"]
+            },
+            "Chieftain's": {
+                "weight": 5,
+                "tags": ["def_boost_3"]
+            },
+            "Warmonger's": {
+                "weight": 1,
+                "tags": ["def_boost_4"]
+            },
+            "Juggernaut's": {
+                "weight": 0.1,
+                "tags": ["def_boost_5"]
+            },
+            "Legendary": {
+                "weight": 0.01,
+                "tags": ["def_boost_6"]
+            }
+        },
+        "suffixes": {
+            "": {
+                "weight": 30,
+                "tags": []
+            },
+            "of Thick Hide": {
+                "weight": 10,
+                "tags": ["def_boost_1"]
+            },
+            "of Iron Will": {
+                "weight": 10,
+                "tags": ["def_boost_2"]
+            },
+            "of Frost Tolerance": {
+                "weight": 5,
+                "tags": ["ice_resist"]
+            },
+            "of Unyielding Grit": {
+                "weight": 1,
+                "tags": ["def_boost_3"]
+            },
+            "of the Juggernaut": {
+                "weight": 0.1,
+                "tags": ["def_boost_4"]
+            },
+            "of Void Defiance": {
+                "weight": 5,
+                "tags": ["void_resist"]
+            }
+        },
+        "prefixes": {
+            "": {
+                "weight": 30,
+                "tags": []
+            },
+            "Rift-Hardened": {
+                "weight": 5,
+                "tags": ["void_resist"]
+            },
+            "Crude": {
+                "weight": 10,
+                "tags": ["def_boost_1"]
+            },
+            "Hardened Bone": {
+                "weight": 5,
+                "tags": ["def_boost_2"]
+            },
+            "Blood-Forged": {
+                "weight": 1,
+                "tags": ["def_boost_3"]
+            },
+            "Primal": {
+                "weight": 0.1,
+                "tags": ["def_boost_4"]
+            }
+        }
+    }
+}

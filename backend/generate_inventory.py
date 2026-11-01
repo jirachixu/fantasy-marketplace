@@ -1,27 +1,25 @@
 import random
-import json
+from constants import WEAPON_LOOT_TABLE, ARMOR_LOOT_TABLE
+from item import Weapon, Armor, Item
 
-with open("loot/loot_table_weapons.json", "r") as f:
-    loot_table_weapons_json = f.read()
-
-loot_table_weapons = json.decoder.JSONDecoder().decode(loot_table_weapons_json)
-
-with open("loot/loot_table_armor.json", "r") as f:
-    loot_table_armor_json = f.read()
-
-loot_table_armor = json.decoder.JSONDecoder().decode(loot_table_armor_json)
-
-def get_weighted_choice(weight_dict: dict[str, int]) -> str:
+def get_weighted_choices(weight_dict: dict[Item, int], k: int = 1) -> list[Item]:
     '''
     Generates a weighted random choice from a dictionary of weights. The keys of the dictionary are the items to choose from, 
     and the values are their corresponding weights. The function returns a randomly chosen item.
     Args:
-        weight_dict (dict[str, int]): A dictionary where keys are items and values are their weights.
+        weight_dict (dict[Item, int]): A dictionary where keys are items and values are their weights.
+        k (int): The number of items to choose.
     Returns:
-        str: A randomly chosen item based on the weights provided.
+        list[Item]: A list of randomly chosen items based on the weights provided.
     '''
     return random.choices(
         population=list(weight_dict.keys()), 
         weights=list(weight_dict.values()), 
-        k=1
-    )[0]
+        k=k
+    )
+    
+def main():
+    return
+
+if __name__ == "__main__":
+    main()
