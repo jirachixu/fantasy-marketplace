@@ -1,29 +1,29 @@
 {
-    "fire": {
+    "fire_damage": {
         "stat": "fire_damage",
         "multiplier": 1.2,
         "element": "fire",
         "elemental_fraction": 0.2
     },
-    "ice": {
+    "ice_damage": {
         "stat": "ice_damage",
         "multiplier": 1.2,
         "element": "ice",
         "elemental_fraction": 0.2
     },
-    "lightning": {
+    "lightning_damage": {
         "stat": "lightning_damage",
         "multiplier": 1.2,
         "element": "lightning",
         "elemental_fraction": 0.2
     },
-    "arcane": {
+    "arcane_damage": {
         "stat": "arcane_damage",
         "multiplier": 1.2,
         "element": "arcane",
         "elemental_fraction": 0.2
     },
-    "void": {
+    "void_damage": {
         "stat": "void_damage",
         "multiplier": 1.2,
         "element": "void",
@@ -36,18 +36,18 @@
         "elemental_fraction": 0.2
     },
     "fire_resist": {
-        "stat": "fire_multiplier"
+        "stat": "fire_resist"
     },
     "ice_resist": {
-        "stat": "ice_multiplier"
+        "stat": "ice_resist"
     },
     "lightning_resist": {
-        "stat": "lightning_multiplier"
+        "stat": "lightning_resist"
     },
-    "mana_shield": {
-        "stat": "arcane_multiplier"
+    "arcane_resist": {
+        "stat": "arcane_resist"
     },
     "void_resist": {
-        "stat": "void_multiplier"
+        "stat": "void_resist"
     }
 }

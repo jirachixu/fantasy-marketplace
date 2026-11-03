@@ -37,3 +37,20 @@ def init_db():
             cur.execute(schema_sql)
         conn.commit()
     print("Database initialized successfully.")
+    
+def reset_db():
+    """
+    Reset the database by dropping all tables and re-initializing the schema.
+    """
+    pool_closed = pool.closed
+    if pool_closed:
+        pool.open()
+    
+    with pool.connection() as conn:
+        with conn.cursor() as cur:
+            cur.execute("DROP SCHEMA public CASCADE; CREATE SCHEMA public;")
+        conn.commit()
+        
+    with pool:
+        init_db()
+    print("Database reset successfully.")

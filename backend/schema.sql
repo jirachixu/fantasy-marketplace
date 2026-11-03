@@ -20,15 +20,16 @@ CREATE TABLE IF NOT EXISTS user_materials (
 );
 
 CREATE TABLE IF NOT EXISTS item_types (
-    id SERIAL PRIMARY KEY,
+    id VARCHAR(50) PRIMARY KEY,
     type_name VARCHAR(50) UNIQUE NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS items (
     id SERIAL PRIMARY KEY,
     owner_id INT REFERENCES users(id) ON DELETE CASCADE,
-    item_type INT REFERENCES item_types(id) ON DELETE CASCADE,
+    item_type VARCHAR(50) REFERENCES item_types(id) ON DELETE CASCADE,
     name VARCHAR(100) NOT NULL,
+    base VARCHAR(50) NOT NULL,
     level VARCHAR(50) NOT NULL,
     prefix VARCHAR(50),
     suffix VARCHAR(50),
@@ -38,10 +39,10 @@ CREATE TABLE IF NOT EXISTS items (
 
 CREATE TABLE IF NOT EXISTS weapons (
     item_id INT PRIMARY KEY REFERENCES items(id) ON DELETE CASCADE,
-    damage FLOAT NOT NULL,
+    physical_damage FLOAT NOT NULL CHECK (physical_damage >= 0),
+    magic_damage FLOAT NOT NULL CHECK (magic_damage >= 0),
     speed FLOAT NOT NULL,
     range FLOAT NOT NULL,
-    damage_type VARCHAR(50) NOT NULL,
     fire_damage FLOAT NOT NULL DEFAULT 0,
     ice_damage FLOAT NOT NULL DEFAULT 0,
     lightning_damage FLOAT NOT NULL DEFAULT 0,
@@ -54,28 +55,31 @@ CREATE TABLE IF NOT EXISTS armor (
     item_id INT PRIMARY KEY REFERENCES items(id) ON DELETE CASCADE,
     defense FLOAT NOT NULL,
     movement_speed FLOAT NOT NULL,
-    magic_resistance FLOAT NOT NULL,
-    fire_multiplier FLOAT NOT NULL DEFAULT 1,
-    ice_multiplier FLOAT NOT NULL DEFAULT 1,
-    lightning_multiplier FLOAT NOT NULL DEFAULT 1,
-    void_multiplier FLOAT NOT NULL DEFAULT 1,
-    arcane_multiplier FLOAT NOT NULL DEFAULT 1
+    magic_resist FLOAT NOT NULL,
+    fire_resist FLOAT NOT NULL DEFAULT 1,
+    ice_resist FLOAT NOT NULL DEFAULT 1,
+    lightning_resist FLOAT NOT NULL DEFAULT 1,
+    void_resist FLOAT NOT NULL DEFAULT 1,
+    arcane_resist FLOAT NOT NULL DEFAULT 1
 );
 
 CREATE TABLE IF NOT EXISTS item_tags (
     item_id INT REFERENCES items(id) ON DELETE CASCADE,
     tag VARCHAR(50) NOT NULL,
-    PRIMARY KEY (item_id, tag)
+    source VARCHAR(50) NOT NULL CHECK (source IN ('base', 'level', 'prefix', 'suffix', 'rune')),
+    PRIMARY KEY (item_id, tag, source)
 );
 
 CREATE TABLE IF NOT EXISTS runes (
     id SERIAL PRIMARY KEY,
     owner_id INT REFERENCES users(id) ON DELETE CASCADE,
     rune_name VARCHAR(100) NOT NULL,
-    element VARCHAR(50) NOT NULL,
-    bonus_stat VARCHAR(50) NOT NULL,
-    bonus_multiplier FLOAT NOT NULL,
-    is_slotted BOOLEAN NOT NULL DEFAULT FALSE
+    description TEXT NOT NULL,
+    stat_to_modify VARCHAR(50) NOT NULL,
+    multiplier FLOAT NOT NULL,
+    is_slotted BOOLEAN NOT NULL DEFAULT FALSE,
+    apply_to VARCHAR(50) NOT NULL CHECK (apply_to IN ('weapon', 'armor')),
+    is_elemental BOOLEAN NOT NULL DEFAULT FALSE
 );
 
 CREATE TABLE IF NOT EXISTS item_sockets (
@@ -87,7 +91,8 @@ CREATE TABLE IF NOT EXISTS item_sockets (
 
 CREATE TABLE IF NOT EXISTS crafting_recipes (
     id SERIAL PRIMARY KEY,
-    result_item_type INT REFERENCES item_types(id) ON DELETE CASCADE
+    result_item_type VARCHAR(50) REFERENCES item_types(id) ON DELETE CASCADE,
+    result_base VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS crafting_recipe_materials (

@@ -1,0 +1,107 @@
+{
+    "rune_of_strength": {
+        "rune_name": "Rune of Strength",
+        "description": "Increases damage by 20%.",
+        "effect": {"damage": 1.20},
+        "apply_to": "weapon",
+        "is_elemental": false
+    },
+    "rune_of_attack_speed": {
+        "rune_name": "Rune of Attack Speed",
+        "description": "Increases attack speed by 10%.",
+        "effect": {"speed": 1.10},
+        "apply_to": "weapon",
+        "is_elemental": false
+    },
+    "rune_of_defense": {
+        "rune_name": "Rune of Defense",
+        "description": "Increases defense by 20%.",
+        "effect": {"defense": 1.20},
+        "apply_to": "armor",
+        "is_elemental": false
+    },
+    "rune_of_movement_speed": {
+        "rune_name": "Rune of Movement Speed",
+        "description": "Increases movement speed by 10%.",
+        "effect": {"movement_speed": 1.10},
+        "apply_to": "armor",
+        "is_elemental": false
+    },
+    "rune_of_magic_resistance": {
+        "rune_name": "Rune of Magic Resistance",
+        "description": "Increases magic resistance by 20%.",
+        "effect": {"magic_resist": 1.20},
+        "apply_to": "armor",
+        "is_elemental": false
+    },
+    "rune_of_fire": {
+        "rune_name": "Rune of Fire",
+        "description": "Adds fire damage to attacks.",
+        "effect": {"fire_damage": 4.0},
+        "apply_to": "weapon",
+        "is_elemental": true
+    },
+    "rune_of_ice": {
+        "rune_name": "Rune of Ice",
+        "description": "Adds ice damage to attacks.",
+        "effect": {"ice_damage": 4.0},
+        "apply_to": "weapon",
+        "is_elemental": true
+    },
+    "rune_of_lightning": {
+        "rune_name": "Rune of Lightning",
+        "description": "Adds lightning damage to attacks.",
+        "effect": {"lightning_damage": 4.0},
+        "apply_to": "weapon",
+        "is_elemental": true
+    },
+    "rune_of_arcane": {
+        "rune_name": "Rune of Arcane",
+        "description": "Adds arcane damage to attacks.",
+        "effect": {"arcane_damage": 4.0},
+        "apply_to": "weapon",
+        "is_elemental": true
+    },
+    "rune_of_void": {
+        "rune_name": "Rune of Void",
+        "description": "Adds void damage to attacks.",
+        "effect": {"void_damage": 4.0},
+        "apply_to": "weapon",
+        "is_elemental": true
+    },
+    "rune_of_fire_resistance": {
+        "rune_name": "Rune of Fire Resistance",
+        "description": "Decreases fire damage taken.",
+        "effect": {"fire_resist": 1.20},
+        "apply_to": "armor",
+        "is_elemental": true
+    },
+    "rune_of_ice_resistance": {
+        "rune_name": "Rune of Ice Resistance",
+        "description": "Decreases ice damage taken.",
+        "effect": {"ice_resist": 1.20},
+        "apply_to": "armor",
+        "is_elemental": true
+    },
+    "rune_of_lightning_resistance": {
+        "rune_name": "Rune of Lightning Resistance",
+        "description": "Decreases lightning damage taken.",
+        "effect": {"lightning_resist": 1.20},
+        "apply_to": "armor",
+        "is_elemental": true
+    },
+    "rune_of_arcane_resistance": {
+        "rune_name": "Rune of Arcane Resistance",
+        "description": "Decreases arcane damage taken.",
+        "effect": {"arcane_resist": 1.20},
+        "apply_to": "armor",
+        "is_elemental": true
+    },
+    "rune_of_void_resistance": {
+        "rune_name": "Rune of Void Resistance",
+        "description": "Decreases void damage taken.",
+        "effect": {"void_resist": 1.20},
+        "apply_to": "armor",
+        "is_elemental": true
+    }
+}

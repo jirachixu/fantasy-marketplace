@@ -84,23 +84,23 @@
             },
             "of Fire": {
                 "weight": 10,
-                "tags": ["fire"]
+                "tags": ["fire_damage"]
             },
             "of Ice": {
                 "weight": 10,
-                "tags": ["ice"]
+                "tags": ["ice_damage"]
             },
             "of Lightning": {
                 "weight": 5,
-                "tags": ["lightning"]
+                "tags": ["lightning_damage"]
             },
             "of the Arcane": {
                 "weight": 1,
-                "tags": ["arcane"]
+                "tags": ["arcane_damage"]
             },
             "of the Void": {
                 "weight": 0.25,
-                "tags": ["void"]
+                "tags": ["void_damage"]
             },
             "of Heaven": {
                 "weight": 0.1,

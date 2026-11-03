@@ -366,7 +366,7 @@
             },
             "of Mana Shielding": {
                 "weight": 1,
-                "tags": ["mana_shield"]
+                "tags": ["arcane_resist"]
             },
             "of the Cosmic Veil": {
                 "weight": 0.1,
@@ -501,7 +501,7 @@
             },
             "of the Veil": {
                 "weight": 1,
-                "tags": ["mana_shield"]
+                "tags": ["arcane_resist"]
             },
             "of the Eclipse": {
                 "weight": 0.1,
